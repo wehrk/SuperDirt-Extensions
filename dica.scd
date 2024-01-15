@@ -17,14 +17,10 @@ SynthDef(\dica, { | out, wave = 0, freq = 220, lag = 0.2, peak = 0.5, res = 0.5,
 )
 
 /*
-
-TidalCycles parameters:
-
 res = pF "res"
 peak = pF "peak"
 dist = pF "dist"
 decay = pF "decay"
 lag = pF "lag"
 wave = pF "wave"
-
 */
