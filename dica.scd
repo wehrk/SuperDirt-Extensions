@@ -1,3 +1,5 @@
+// Perc'd 303
+
 (
 SynthDef(\dica, { | out, wave = 0, freq = 220, lag = 0.2, peak = 0.5, res = 0.5, dist = 0.5, attack = 0.01, decay = 0.5, sustain = 0.0, release = 1.0, curve = -3, pan = 0.0, amp = 1.0 |
 	var saw, pulse, eg, sig;
@@ -13,3 +15,16 @@ SynthDef(\dica, { | out, wave = 0, freq = 220, lag = 0.2, peak = 0.5, res = 0.5,
 	OffsetOut.ar(out, sig);
 }).add;
 )
+
+/*
+
+TidalCycles parameters:
+
+res = pF "res"
+peak = pF "peak"
+dist = pF "dist"
+decay = pF "decay"
+lag = pF "lag"
+wave = pF "wave"
+
+*/
