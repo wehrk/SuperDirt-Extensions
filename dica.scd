@@ -17,10 +17,26 @@ SynthDef(\dica, { | out, wave = 0, freq = 220, lag = 0.2, peak = 0.5, res = 0.5,
 )
 
 /*
-res = pF "res"
+
+let res = pF "res"
 peak = pF "peak"
 dist = pF "dist"
 decay = pF "decay"
 lag = pF "lag"
 wave = pF "wave"
+
+d1 
+    $ off (1/48) (|* n (slow 2 sine))
+    $ s "dica" 
+    -- >| n ("[-16 4 [-8|11] -4]*16" * "[-2 2]*8") 
+    >| n "[1 2 3 4 5 6 7 8]*6"
+    # peak (range 0.1 0.8 $ fast 8 perlin)
+    # res 0.3
+    # attack (slow 2 ((sine * 0.1) + 0.01))
+    # decay 2
+    # legato 5
+    # release 0.3
+    # dist 4
+    # wave (slow 4 perlin)
+
 */
