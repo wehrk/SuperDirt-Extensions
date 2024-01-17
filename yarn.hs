@@ -1,4 +1,8 @@
 let
+    -- grain envelope
+    tilt = pF "tilt"
+    plat = pF "plat"
+    curve = pF "curve"
     -- dica
     res = pF "res"
     peak = pF "peak"
