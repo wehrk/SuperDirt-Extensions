@@ -1,4 +1,4 @@
-// Tukey windowed dirt_grain_envelope replacement
+// dirt_grain_envelope replacement with Tukey window
 
 (
 SynthDef("dirt_grain_envelope" ++ numChannels, { | out, sustain = 1, alpha = 1.0 |
