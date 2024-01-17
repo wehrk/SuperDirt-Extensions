@@ -18,12 +18,13 @@ SynthDef(\dica, { | out, wave = 0, freq = 220, peak = 0.5, res = 0.5, dist = 0.5
 
 /*
 
-let res = pF "res"
-peak = pF "peak"
-dist = pF "dist"
-decay = pF "decay"
+let slide x = accelerate (2 **| (x |/ 12) - 1)
 slidetime = pF "slidetime"
+peak = pF "peak"
+res = pF "res"
+decay = pF "decay"
 wave = pF "wave"
+dist = pF "dist"
 
 
 d1
