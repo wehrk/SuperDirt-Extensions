@@ -11,8 +11,7 @@ SynthDef(\dica, { |out, wave = 0, freq = 220, lag = 0.2, peak = 0.5, res = 0.5, 
 	eg = eg.clip(20, 2e4);
 	sig = RLPFD.ar(sig, eg, res, dist);
 	sig = sig * Env.adsr(attack, decay, 1.0, release, amp, curve).kr(2, 1, timeScale: sustain);
-	sig = DirtPan.ar(sig, ~dirt.numChannels, pan);
-	OffsetOut.ar(out, sig)
+	OffsetOut.ar(out, DirtPan.ar(sig, ~dirt.numChannels, pan);)
 }).add;
 )
 
