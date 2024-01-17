@@ -104,7 +104,7 @@ SynthDef(\tides, { |out = 0, freq = 440, sustain = 1, pan = 0, begin = 0, end = 
 			out: ~out
 		]
 	)
-}, {~elementsstrength.notNil});
+}, { ~elementsstrength.notNil });
 );
 
 (
@@ -172,7 +172,7 @@ SynthDef("mu" ++ ~dirt.numChannels, {|out,mu=0|
 			out: ~out
 		]
 	)
-}, {~ringsbright.notNil});
+}, { ~ringsbright.notNil });
 );
 
 (
@@ -206,7 +206,7 @@ SynthDef("rings" ++ ~dirt.numChannels, { |out, ringsfreq = 440, ringsstruct = 0,
 			out: ~out
 		]
 	)
-}, {~ripplescf.notNil});
+}, { ~ripplescf.notNil });
 );
 
 (
@@ -236,7 +236,7 @@ SynthDef("ripples" ++ ~dirt.numChannels, { |out, ripplescf = 0, ripplesreson = 0
 			out: ~out
 		]
 	)
-}, {~warpsalgo.notNil});
+}, { ~warpsalgo.notNil });
 );
 
 (
